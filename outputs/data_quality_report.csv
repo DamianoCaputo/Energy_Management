@@ -1,0 +1,8 @@
+dataset,rows,columns,duplicated_rows,null_cells,columns_list
+buildings_load_pul,6552,3,0,0,"0, 1, 2"
+ir_rome_campus_bio_medico_2022_ir,8760,3,4227,0,"0, 1, 2"
+office_load_pul,8760,3,0,0,"0, 1, 2"
+pun_2022_pun,8760,1,1431,0,0
+res_1_year_pu_p_pv,8760,2,4311,0,"0, 1"
+res_1_year_pu_p_w,8760,2,2972,0,"0, 1"
+t_ex_rome_campus_bio_medico_2022_t_ex,8760,3,0,0,"0, 1, 2"
