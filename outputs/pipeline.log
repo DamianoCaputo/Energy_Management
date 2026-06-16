@@ -248,3 +248,124 @@
 2026-05-24 18:04:48,304 | INFO | src.plotting | Saved plots: ['outputs\\plots\\fuel_0_6\\soc_year.png', 'outputs\\plots\\fuel_0_6\\power_profiles_first_week.png', 'outputs\\plots\\fuel_0_6\\daily_net_cost.png']
 2026-05-24 18:04:48,304 | INFO | __main__ | Scenario 0.600 saved to outputs\dispatch_fuel_0_6.csv
 2026-05-24 18:04:48,311 | INFO | __main__ | Pipeline completed. Output folder: outputs
+2026-06-16 22:56:07,640 | INFO | __main__ | Starting pipeline
+2026-06-16 22:56:07,642 | INFO | src.reader | Processed CSV datasets found. Loading from: data\processed
+2026-06-16 22:56:07,643 | INFO | src.reader | Loading processed CSV: data\processed\buildings_load_pul.csv
+2026-06-16 22:56:07,714 | INFO | src.reader | Loading processed CSV: data\processed\ir_rome_campus_bio_medico_2022_ir.csv
+2026-06-16 22:56:07,758 | INFO | src.reader | Loading processed CSV: data\processed\office_load_pul.csv
+2026-06-16 22:56:07,801 | INFO | src.reader | Loading processed CSV: data\processed\pun_2022_pun.csv
+2026-06-16 22:56:07,857 | INFO | src.reader | Loading processed CSV: data\processed\res_1_year_pu_p_pv.csv
+2026-06-16 22:56:07,901 | INFO | src.reader | Loading processed CSV: data\processed\res_1_year_pu_p_w.csv
+2026-06-16 22:56:07,931 | INFO | src.reader | Loading processed CSV: data\processed\t_ex_rome_campus_bio_medico_2022_t_ex.csv
+2026-06-16 22:56:07,992 | INFO | __main__ | Loaded datasets: ['buildings_load_pul', 'ir_rome_campus_bio_medico_2022_ir', 'office_load_pul', 'pun_2022_pun', 'res_1_year_pu_p_pv', 'res_1_year_pu_p_w', 't_ex_rome_campus_bio_medico_2022_t_ex']
+2026-06-16 22:56:08,141 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,173 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,204 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,235 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,263 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,291 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,314 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,341 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,370 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,395 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,419 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,446 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,473 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,497 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,520 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,545 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,570 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,591 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,613 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,645 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,667 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,691 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,719 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,744 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,773 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,801 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,831 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,856 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,881 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,916 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,938 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,968 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:08,990 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,016 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,036 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,057 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,079 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,102 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,124 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,148 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,177 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,197 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,221 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,245 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,265 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,287 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,310 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,331 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,354 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,375 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,396 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,424 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.45
+2026-06-16 22:56:09,447 | INFO | src.analysis | Solving LP dispatch: hours=24, variables=192, fuel_cost=0.45
+2026-06-16 22:56:11,108 | INFO | src.plotting | Saved plots: ['outputs\\plots\\fuel_0_45\\soc_year.png', 'outputs\\plots\\fuel_0_45\\power_profiles_first_week.png', 'outputs\\plots\\fuel_0_45\\daily_net_cost.png']
+2026-06-16 22:56:11,109 | INFO | __main__ | Scenario 0.450 saved to outputs\dispatch_fuel_0_45.csv
+2026-06-16 22:56:11,112 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,131 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,153 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,178 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,200 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,232 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,254 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,288 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,318 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,346 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,368 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,396 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,423 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,443 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,463 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,485 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,511 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,538 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,562 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,584 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,609 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,639 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,665 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,692 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,715 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,738 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,762 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,787 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,811 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,840 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,861 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,883 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,905 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,929 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,951 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,972 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:11,992 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:12,015 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:12,038 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:12,058 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:12,085 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:12,106 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:12,127 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:12,148 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:12,170 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:12,191 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:12,212 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:12,233 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:12,256 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:12,276 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:12,298 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:12,321 | INFO | src.analysis | Solving LP dispatch: hours=168, variables=1344, fuel_cost=0.6
+2026-06-16 22:56:12,341 | INFO | src.analysis | Solving LP dispatch: hours=24, variables=192, fuel_cost=0.6
+2026-06-16 22:56:13,330 | INFO | src.plotting | Saved plots: ['outputs\\plots\\fuel_0_6\\soc_year.png', 'outputs\\plots\\fuel_0_6\\power_profiles_first_week.png', 'outputs\\plots\\fuel_0_6\\daily_net_cost.png']
+2026-06-16 22:56:13,330 | INFO | __main__ | Scenario 0.600 saved to outputs\dispatch_fuel_0_6.csv
+2026-06-16 22:56:13,332 | INFO | __main__ | Pipeline completed. Output folder: outputs
