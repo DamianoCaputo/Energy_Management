@@ -73,7 +73,7 @@ def build_project_timeseries(
     df["office_load_kwh"] = office[f"office_load_{mode_col}_kwh"].iloc[:n].to_numpy(dtype=float)
     df["pv_kw"] = res_raw.iloc[:n, res_col].to_numpy(dtype=float) * asset.pv_nom_kw
     # MAT file stores both P_pv and P_w as separate variables; reader returns both. Pick wind by exact key if available.
-    wind_candidates = [name for name in datasets if "res_1_year_pu__p_w" in name.lower()]
+    wind_candidates = [name for name in datasets if "res_1_year_pu_p_w" in name.lower()]
     if wind_candidates:
         wind_raw = datasets[wind_candidates[0]]
         df["wind_kw"] = wind_raw.iloc[:n, res_col].to_numpy(dtype=float) * asset.wind_nom_kw
