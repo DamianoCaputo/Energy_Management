@@ -16,6 +16,10 @@ PROCESSED_EXTENSION = ".csv"
 
 
 def infer_format(path: Path) -> str:
+    """
+    Infer the file format from the extension. Supported formats: csv, tsv, xlsx, xls, json, mat.
+    Raises ValueError if the format is unsupported.
+    """
     suffix = path.suffix.lower()
     if suffix not in SUPPORTED_EXTENSIONS:
         raise ValueError(
@@ -32,6 +36,10 @@ def _safe_dataset_name(name: str) -> str:
 
 
 def _read_csv_like(path: Path) -> pd.DataFrame:
+    """
+    Read a CSV-like file with multiple encoding and separator fallbacks.
+    Tries common encodings and separators until one works, or raises the last error if all fail.
+    """
     encodings = ["utf-8", "utf-8-sig", "latin-1", "cp1252"]
     separators = [None, ",", ";", "\t", "|"]
     last_error: Exception | None = None
@@ -47,6 +55,10 @@ def _read_csv_like(path: Path) -> pd.DataFrame:
 
 
 def _read_excel(path: Path) -> dict[str, pd.DataFrame]:
+    """
+    Read an Excel file and return a dictionary of DataFrames, one per sheet. 
+    The keys are normalized as {filename}__{sheetname}.
+    """
     sheets = pd.read_excel(path, sheet_name=None, engine="openpyxl")
     return {
         _safe_dataset_name(f"{path.stem}__{sheet}"): normalize_columns(df)
@@ -62,6 +74,10 @@ def _read_json(path: Path) -> pd.DataFrame:
 
 
 def _read_mat(path: Path) -> dict[str, pd.DataFrame]:
+    """
+    Read a MATLAB .mat file and return a dictionary of DataFrames for each variable.
+    Variables with 1D or 2D numeric arrays are converted to DataFrames.
+    """
     raw: dict[str, Any] = loadmat(path)
     frames: dict[str, pd.DataFrame] = {}
 
@@ -93,6 +109,10 @@ def _read_mat(path: Path) -> dict[str, pd.DataFrame]:
 
 
 def read_file(path: Path) -> dict[str, pd.DataFrame]:
+    """
+    Read a single file and return a dictionary of DataFrames. 
+    The key is a normalized name based on the filename and sheet/variable name.
+    """
     fmt = infer_format(path)
     LOGGER.info("Reading %s as %s", path.name, fmt)
 
@@ -113,6 +133,7 @@ def read_file(path: Path) -> dict[str, pd.DataFrame]:
 
 
 def _list_supported_files(path: Path) -> list[Path]:
+    """Return a list of supported files in the given path. If path is a file, return it if supported."""
     if path.is_file():
         return [path]
     return sorted(p for p in path.rglob("*") if p.suffix.lower() in SUPPORTED_EXTENSIONS)
@@ -222,6 +243,10 @@ def validate_schema(
     datasets: dict[str, pd.DataFrame],
     required: dict[str, list[str]] | None = None,
 ) -> None:
+    """
+    Validate that the loaded datasets contain the required tables and columns.
+    Raises ValueError if any required dataset or column is missing.
+    """
     if not datasets:
         raise ValueError("No datasets loaded")
 

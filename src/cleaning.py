@@ -11,6 +11,7 @@ LOGGER = logging.getLogger(__name__)
 
 
 def _pick_dataset(datasets: dict[str, pd.DataFrame], contains: str) -> pd.DataFrame:
+    """Pick a dataset by case-insensitive substring match on the name. Raises KeyError if not found or multiple matches."""
     matches = [df for name, df in datasets.items() if contains.lower() in name.lower()]
     if not matches:
         raise KeyError(f"Dataset containing '{contains}' not found. Available: {list(datasets)}")
@@ -18,12 +19,14 @@ def _pick_dataset(datasets: dict[str, pd.DataFrame], contains: str) -> pd.DataFr
 
 
 def _series_from_mat_3cols(df: pd.DataFrame, forecast_name: str, actual_name: str) -> pd.DataFrame:
+    """Convert a matrix with 3 columns (hour, forecast, actual) to a DataFrame."""
     if df.shape[1] < 3:
         raise ValueError(f"Expected at least 3 columns for hour/forecast/actual, got {df.shape[1]}")
     return pd.DataFrame({forecast_name: df.iloc[:, 1].astype(float), actual_name: df.iloc[:, 2].astype(float)})
 
 
 def _tariff_fascia(index: pd.DatetimeIndex, tariff: TariffConfig) -> pd.Series:
+    """Return a Series of import prices based on the tariff fascia rules for the given timestamps."""
     values: list[float] = []
     for ts in index:
         if ts.weekday() >= 5:

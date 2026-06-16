@@ -5,6 +5,10 @@ from dataclasses import dataclass
 
 @dataclass(frozen=True)
 class AssetConfig:
+    """
+    Configuration for the asset and its constraints.
+    Values are based on the specifications for Project 6, but can be overridden for experimentation.
+    """
     pv_nom_kw: float = 40.0
     wind_nom_kw: float = 60.0
     office_nom_kw: float = 180.0
@@ -27,7 +31,8 @@ class AssetConfig:
 
 
 @dataclass(frozen=True)
-class TariffConfig:
+class TariffConfig: 
+    """Configuration for the tariff prices."""
     f1_eur_kwh: float = 0.53276
     f2_eur_kwh: float = 0.54858
     f3_eur_kwh: float = 0.46868

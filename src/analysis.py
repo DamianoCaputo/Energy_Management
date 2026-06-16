@@ -17,11 +17,13 @@ class OptimizationError(RuntimeError):
 
 
 def _var_indices(n: int) -> dict[str, slice]:
+    """Return variable index slices for the optimization vector."""
     names = ["p_import", "p_export", "p_gen", "p_charge", "p_discharge", "p_curtail", "p_pev", "soc"]
     return {name: slice(i * n, (i + 1) * n) for i, name in enumerate(names)}
 
 
 def optimize_dispatch(df: pd.DataFrame, asset: AssetConfig, fuel_cost_eur_kwh: float, initial_soc_pct: float | None = None) -> pd.DataFrame:
+    """Optimize the dispatch of the asset to minimize net cost, given the input timeseries and fuel cost."""
     required = ["timestamp", "office_load_kwh", "renewable_kw", "import_price_eur_kwh", "export_price_eur_kwh"]
     missing = [col for col in required if col not in df.columns]
     if missing:
@@ -118,6 +120,7 @@ def optimize_dispatch(df: pd.DataFrame, asset: AssetConfig, fuel_cost_eur_kwh: f
 
 
 def summarize_dispatch(dispatch: pd.DataFrame, asset: AssetConfig) -> pd.DataFrame:
+    """Summarize the dispatch results."""
     summary = {
         "hours": len(dispatch),
         "total_load_kwh": dispatch["office_load_kwh"].sum(),

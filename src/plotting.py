@@ -12,6 +12,14 @@ LOGGER = logging.getLogger(__name__)
 
 
 def save_plots(dispatch: pd.DataFrame, out_dir: Path, first_hours: int = 168) -> list[Path]:
+    """
+    Save plots of the dispatch results to the specified output directory. 
+    Returns a list of saved file paths.
+    Plots include:
+    - Battery state of charge over the year
+    - Power profiles for the first week
+    - Daily net cost over the year
+    """
     ensure_dir(out_dir)
     saved: list[Path] = []
     df = dispatch.copy()
