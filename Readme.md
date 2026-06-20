@@ -285,8 +285,6 @@ Grafici PNG per ogni scenario:
 
 ---
 
-
-
 ## Interpretazione Risultati
 
 ### State of Charge (SoC)
